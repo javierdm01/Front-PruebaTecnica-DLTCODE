@@ -1,0 +1,57 @@
+@import './variables.scss';
+@import './login.scss';
+
+.register_box{
+    @extend .login_box;
+    
+}
+.register_img{
+    @extend .login_img;
+    
+}
+.register_info{
+    @extend .login_info;
+    padding: 0;
+    height: 100%;
+    @media( min-width: $breakpoint-desktop){
+        height: 100vh !important;
+        font-size: 0.85rem;
+        margin: 0;
+    }
+}
+.register_error{
+    @extend .login_error;
+}
+.register_success{
+    @extend .login_success;
+}
+.register_scroll{
+    padding: 25px 15px;
+    @media( min-width: $breakpoint-desktop){
+        scroll-behavior: smooth;
+        overflow-y: auto;
+        padding: 15px 35px;
+    }
+    
+}
+.register_title{
+    @extend .login_title;
+}
+.register_form{
+    @extend .login_form;
+}
+.register_input-box{
+    @extend .login_input-box;
+    
+}
+.register_input{
+    @extend .login_input;
+    color: $color-light;
+}
+
+.register_option{
+    color: $color-light;
+}
+.register_login{
+    @extend .login_register
+}

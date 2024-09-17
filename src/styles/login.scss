@@ -1,0 +1,117 @@
+@import './variables.scss';
+
+.login_box{
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    color: $color-light;
+    max-width: 2200px;
+    margin: auto;
+    @media (min-width: $breakpoint-tablet) {
+        
+    }/*
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;*/
+}
+.login_img{
+    display: none;
+    width: 60%;
+    height: 100vh;
+    background-size: cover;
+    max-width: 1500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    @media( min-width: $breakpoint-desktop){
+        display: block;
+
+    }
+}
+.login_info{
+    
+    gap: 10px;
+    max-width: 600px;
+    width: 84%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15% 0;
+    @media( min-width: $breakpoint-desktop){
+        padding: 0;
+        max-width: 1200px;
+        width: 40%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 20px ;
+    }
+}
+.login_title{
+    font-size: 1.4rem;
+    font-weight: 700;
+    height: 50px;
+    color: $color-secondary;
+    margin-bottom: 20px;
+    &::first-letter{
+        font-size: 2rem;
+    }
+}
+.login_form{
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.login_input-box{
+    text-align: left;
+    width: 100%;
+    height: 68px;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.login_input-label{
+    width: 100%;
+    color: $color-primary;
+}
+.login_input{
+    width: 100%;
+    font-size: 0.9rem;
+    height: 55px;
+    padding: 14px 15px;
+    background-color: rgb(243, 243, 243);
+    border-radius: 15px;
+    outline: none;
+    border: none;
+}
+.login_button{
+    width: 80%;
+    padding: 20px;
+    background-color: $color-primary;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    font-family: $font-sedan-sans;
+    cursor: pointer;
+}
+.login_error{
+    color: red
+}
+.login_success{
+    color: rgb(5, 204, 5);
+}
+.login_register{
+    cursor: pointer;
+}
